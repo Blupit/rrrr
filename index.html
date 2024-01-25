@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <style>
+            .logo_text {
+                font-family: Titan One; 
+                font-size: 7.3vh; 
+                text-shadow: 2px 2px 8px rgb(60, 60, 60); 
+                left: 25px; 
+                top: 20px;
+                color: white;
+                position: absolute;
+            }
+            .headerSide {
+                background-color: #3cb383;
+                box-shadow: -8px 0px rgba(0, 0, 0, 0.2) inset, 0px 0px 4px rgba(0, 0, 0, 0.15);
+                width: 70vw;
+                height: 130vh;
+                position: absolute;
+                top: -10vh;
+                left: -20vw;
+                transform: rotate(-15deg);
+                z-index: -1;
+                overflow: hidden;
+                overflow-x: hidden;
+            }
+            .button {
+                background-color: #04AA6D; /* Green */
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 8px;
+                font-family: Nunito, sans-serif;
+                height: 6vh;
+                width: 18vh;
+                line-height: 6vh;
+                box-shadow: 0px -5px rgba(43, 39, 39, 0.2) inset, 0px 0px 4px rgba(0, 0, 0, 0.15);
+                text-align: center;
+                margin-right: 5vw;
+                position: absolute;
+                top: 20px;
+                left: 70%;
+                vertical-align: middle;
+            }
+
+            .button2 {
+                background-color: #04AA6D; /* Green */
+                color: white;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 25px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 8px;
+                font-family: Nunito, sans-serif;
+                height: 6vh;
+                width: 18vh;
+                line-height: 6vh;
+                box-shadow: 0px -5px rgba(43, 39, 39, 0.2) inset, 0px 0px 4px rgba(0, 0, 0, 0.15);
+                text-align: center;
+                margin-right: 5vw;
+                position: absolute;
+                top: 20px;
+                left: 85%;
+                vertical-align: middle;
+            }
+
+            .button1 {
+                background-color: #04AA6D; 
+                color: white; 
+                border: none;
+                border-radius: 8px;
+                font-family: Nunito, sans-serif;
+                height: 6vh;
+                width: 18vh;
+                line-height: 6vh;
+            }
+
+            .button1:hover {
+                background-color: #04AA6D;
+                color: white;
+                border-radius: 8px;
+                font-family: Nunito, sans-serif;
+                height: 6vh;
+                width: 18vh;
+            }
+            .button2:hover {
+                background-color: #04AA6D;
+                color: white;
+                border-radius: 8px;
+                font-family: Nunito, sans-serif;
+                height: 6vh;
+                width: 18vh;
+            }
+            .get_started {
+                background-color: #3cb383; 
+                border: 2px solid white;
+                color: white;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                top: 22vh;
+                left: 2vw;
+                width: 32vh;
+                height: 7vh;
+                border-radius: 6px;
+                position: absolute;
+                font-family: Nunito, sans-serif;
+                font-size: 25px;
+                vertical-align: middle;
+                line-height: 1vh;
+                margin-top:3vh;
+            }
+            .get_started1 {
+                background-color: none; 
+                color: white; 
+                border: 2px solid white;
+                top: 75vh;
+                left: 5vw;
+                border-radius: 6px;
+                font-family: Nunito, sans-serif;
+                position: absolute;
+                vertical-align: middle;
+                line-height: 1vh;
+                margin-top:3vh;
+            }
+
+            .get_started1:hover {
+                background-color: white;
+                color: #04AA6D;
+            }
+            .welcomeDesc {
+                font-size: 3.35vh;
+                font-family: Nunito, sans-serif;
+                left: 5vw;
+                top: 70vh;
+                margin-bottom: 3vh;
+                color: white;
+                position: absolute;
+            }
+            .login_button {
+                {transition-timing-function: ease;}
+            }
+            .login_button:hover {
+                width: 18.5vh;
+                height: 6.5vh;
+            }
+            .register_button {
+                {transition-timing-function: ease;}
+            }
+            .register_button:hover {
+                width: 18.5vh;
+                height: 6.5vh;
+            }
+            .login_link {
+                color: white;
+                text-decoration: none;
+            }
+            .login_link:hover {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body style="background-color:#bbffd8; overflow: hidden;">
+        <div class="headerSide">
+        </div>
+        <span class="logo_text">Anolet</span>
+        <a class="login_link" href="login.html"><button class="button button1 login_button">Login</button></a>
+        <a href="signup.html"><button class="button2 button1 register_button">Sign Up</button></a>
+        <a href="signup.html"><button class="get_started get_started1">Get Started</button></a>
+        <div style="margin-top: -175px;" class="welcomeDesc">
+         
+            <br>
+            <span style="margin-top: -275px; margin-left: -50px;" class="logo_text">
+                <br>
+                Blooket
+<br>
+                Private
+<br>
+                Server
+            </span>
+<br>
+<button class="get_started1">eeeee</button>
+            One of the Best Private Servers
+            <br>
+            fully made by Buenar And Prq
+            <br>
+            Made with javascript
+            <br>
+            The First Anole Themed Blooket Project
+        </div>
+    </body>
+</html>
